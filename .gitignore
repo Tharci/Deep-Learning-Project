@@ -3,3 +3,6 @@ videos/**
 .idea/**
 
 
+/frames/
+/images/
+/videos/

@@ -16,8 +16,8 @@ import os
 # - mp4 is the only supported extension at the moment
 
 FRAMES_DISTANCE = 10000
-VIDEOS_PATH = "videos/cyberpunk"
-FRAMES_OUTPUT = "frames/cyberpunk"
+VIDEOS_PATH = "videos"
+FRAMES_OUTPUT = "frames"
 
 
 def prepare_videos():
@@ -26,7 +26,7 @@ def prepare_videos():
     except:
         pass
 
-    videos = os.listdir("videos")
+    videos = os.listdir(VIDEOS_PATH)
     videos = filter(lambda name: name.endswith("mp4"), videos)
     videos = list(map(lambda name: "%s/%s" % (VIDEOS_PATH, name), videos))
 
@@ -78,11 +78,12 @@ def generate_images(file, time_ranges):
         timestamp = video.get(cv2.CAP_PROP_POS_MSEC)
         if timestamp > last_timestamp + FRAMES_DISTANCE and is_timestamp_in_range(timestamp, time_ranges):
             success, image = video.retrieve()
+            cv2.imwrite("%s/%s_%d.jpg" % (FRAMES_OUTPUT, video_name, timestamp), image)
             h, w, _ = image.shape
-            imageLeft = image[:, :h]
-            imageRight = image[:, w-h:]
-            cv2.imwrite("%s/%s_%d_l.jpg" % (FRAMES_OUTPUT, video_name, timestamp), imageLeft)
-            cv2.imwrite("%s/%s_%d_r.jpg" % (FRAMES_OUTPUT, video_name, timestamp), imageRight)
+            # imageLeft = image[:, :h]
+            # imageRight = image[:, w-h:]
+            # cv2.imwrite("%s/%s_%d_l.jpg" % (FRAMES_OUTPUT, video_name, timestamp), imageLeft)
+            # cv2.imwrite("%s/%s_%d_r.jpg" % (FRAMES_OUTPUT, video_name, timestamp), imageRight)
             last_timestamp = timestamp
     print("Execution time: %s seconds\n" % (time.time() - start_time))
 
