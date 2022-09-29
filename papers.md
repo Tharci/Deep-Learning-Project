@@ -16,8 +16,10 @@
 ## Sample Implementations
 - https://github.com/alexandru-dinu/cae
 - https://www.imjustageek.com/blog/using-autoencoder-neural-nets-to-compress-andor-upscale-video
+- https://blog.paperspace.com/autoencoder-image-compression-keras/
 
-
-
-
+## Might be useful
+- https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w50/Zhou_Variational_Autoencoder_for_CVPR_2018_paper.pdf
+- https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Slimmable_Compressive_Autoencoders_for_Practical_Neural_Image_Compression_CVPR_2021_paper.pdf
+- https://openaccess.thecvf.com/content_ICCV_2019/papers/Habibian_Video_Compression_With_Rate-Distortion_Autoencoders_ICCV_2019_paper.pdf
 
