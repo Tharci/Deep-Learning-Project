@@ -23,3 +23,5 @@
 - https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Slimmable_Compressive_Autoencoders_for_Practical_Neural_Image_Compression_CVPR_2021_paper.pdf
 - https://openaccess.thecvf.com/content_ICCV_2019/papers/Habibian_Video_Compression_With_Rate-Distortion_Autoencoders_ICCV_2019_paper.pdf
 
+## Quantization
+- https://keras.io/examples/generative/vq_vae/
