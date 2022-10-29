@@ -7,3 +7,5 @@ videos/**
 /images/
 /videos/
 /model-saves/tmp/
+
+playground/__pycache__/
