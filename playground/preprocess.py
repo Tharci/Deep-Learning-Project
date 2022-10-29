@@ -39,7 +39,14 @@ def crop_img(img, crop_size):
     return img[y:y+crop_size[0], x:x+crop_size[1]]
 
 
-# TODO
+# shifts img from [-1,1] to [0,1]
+def decenter_img(img):
+    return img / 2 + 0.5
+
+
+# shifts img from [0,1] to [-1,1]
+def center_img(img):
+    return (img - 0.5) * 2
 
 
 

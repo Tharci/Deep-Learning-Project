@@ -1,10 +1,11 @@
 import tensorflow
 from keras import Model
 from keras.layers import Conv2D, BatchNormalization, Activation, Conv2DTranspose, Input
+from preprocess import decenter_img
 
 
-def ssim_loss(y_true, y_pred):
-    return 1 - tensorflow.reduce_mean(tensorflow.image.ssim_multiscale(y_true, y_pred, 1.0, filter_size=3))
+#def ssim_loss(y_true, y_pred):
+#    return 1 - tensorflow.reduce_mean(tensorflow.image.ssim_multiscale(y_true, y_pred, 1.0, filter_size=3))
 
 
 def my_conv(x, filters, kernel_size=3, strides=(2, 2), padding='same', kernel_initializer='he_normal', name=None):
