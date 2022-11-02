@@ -9,3 +9,4 @@ videos/**
 /model-saves/tmp/
 
 playground/__pycache__/
+playground/logs/
