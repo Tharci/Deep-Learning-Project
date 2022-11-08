@@ -1,0 +1,135 @@
+5 mae + 60 ssim_mae_loss, 0.0025
+
+
+### Pretraining:
+Epoch 1/5
+212/212 [==============================] - 70s 309ms/step - loss: 0.1473 - ssim_loss: 0.2477 - mae: 0.1473 - val_loss: 0.1455 - val_ssim_loss: 0.2247 - val_mae: 0.1455
+Epoch 2/5
+212/212 [==============================] - 68s 321ms/step - loss: 0.1137 - ssim_loss: 0.1650 - mae: 0.1137 - val_loss: 0.1915 - val_ssim_loss: 0.2323 - val_mae: 0.1915
+Epoch 3/5
+212/212 [==============================] - 62s 292ms/step - loss: 0.1001 - ssim_loss: 0.1343 - mae: 0.1001 - val_loss: 0.0950 - val_ssim_loss: 0.1153 - val_mae: 0.0950
+Epoch 4/5
+212/212 [==============================] - 60s 284ms/step - loss: 0.1006 - ssim_loss: 0.1218 - mae: 0.1006 - val_loss: 0.1195 - val_ssim_loss: 0.1252 - val_mae: 0.1195
+Epoch 5/5
+212/212 [==============================] - 65s 306ms/step - loss: 0.0956 - ssim_loss: 0.1130 - mae: 0.0956 - val_loss: 0.1606 - val_ssim_loss: 0.2078 - val_mae: 0.1606
+### Training:
+Epoch 1/60
+212/212 [==============================] - 81s 344ms/step - loss: 0.0911 - ssim_loss: 0.0915 - mae: 0.0906 - val_loss: 0.0971 - val_ssim_loss: 0.1005 - val_mae: 0.0944
+Epoch 2/60
+212/212 [==============================] - 73s 344ms/step - loss: 0.0871 - ssim_loss: 0.0857 - mae: 0.0886 - val_loss: 0.1162 - val_ssim_loss: 0.1001 - val_mae: 0.1314
+Epoch 3/60
+212/212 [==============================] - 74s 350ms/step - loss: 0.0805 - ssim_loss: 0.0780 - mae: 0.0829 - val_loss: 0.0877 - val_ssim_loss: 0.0924 - val_mae: 0.0840
+Epoch 4/60
+212/212 [==============================] - 70s 332ms/step - loss: 0.0772 - ssim_loss: 0.0741 - mae: 0.0803 - val_loss: 0.0786 - val_ssim_loss: 0.0716 - val_mae: 0.0859
+Epoch 5/60
+212/212 [==============================] - 61s 290ms/step - loss: 0.0742 - ssim_loss: 0.0705 - mae: 0.0779 - val_loss: 0.0881 - val_ssim_loss: 0.0738 - val_mae: 0.1030
+Epoch 6/60
+212/212 [==============================] - 72s 341ms/step - loss: 0.0711 - ssim_loss: 0.0674 - mae: 0.0748 - val_loss: 0.0800 - val_ssim_loss: 0.0681 - val_mae: 0.0921
+Epoch 7/60
+212/212 [==============================] - 70s 332ms/step - loss: 0.0692 - ssim_loss: 0.0670 - mae: 0.0714 - val_loss: 0.0862 - val_ssim_loss: 0.0830 - val_mae: 0.0896
+Epoch 8/60
+212/212 [==============================] - 70s 329ms/step - loss: 0.0630 - ssim_loss: 0.0622 - mae: 0.0639 - val_loss: 0.0755 - val_ssim_loss: 0.0698 - val_mae: 0.0811
+Epoch 9/60
+212/212 [==============================] - 68s 323ms/step - loss: 0.0614 - ssim_loss: 0.0596 - mae: 0.0631 - val_loss: 0.0594 - val_ssim_loss: 0.0564 - val_mae: 0.0620
+Epoch 10/60
+212/212 [==============================] - 67s 314ms/step - loss: 0.0587 - ssim_loss: 0.0570 - mae: 0.0604 - val_loss: 0.0632 - val_ssim_loss: 0.0589 - val_mae: 0.0673
+Epoch 11/60
+212/212 [==============================] - 68s 320ms/step - loss: 0.0575 - ssim_loss: 0.0555 - mae: 0.0595 - val_loss: 0.0667 - val_ssim_loss: 0.0576 - val_mae: 0.0760
+Epoch 12/60
+212/212 [==============================] - 64s 301ms/step - loss: 0.0568 - ssim_loss: 0.0550 - mae: 0.0587 - val_loss: 0.0675 - val_ssim_loss: 0.0593 - val_mae: 0.0757
+Epoch 13/60
+212/212 [==============================] - 65s 309ms/step - loss: 0.0557 - ssim_loss: 0.0530 - mae: 0.0584 - val_loss: 0.0615 - val_ssim_loss: 0.0616 - val_mae: 0.0614
+Epoch 14/60
+212/212 [==============================] - 64s 300ms/step - loss: 0.0549 - ssim_loss: 0.0524 - mae: 0.0575 - val_loss: 0.0574 - val_ssim_loss: 0.0550 - val_mae: 0.0601
+Epoch 15/60
+212/212 [==============================] - 64s 301ms/step - loss: 0.0555 - ssim_loss: 0.0529 - mae: 0.0581 - val_loss: 0.0605 - val_ssim_loss: 0.0553 - val_mae: 0.0662
+Epoch 16/60
+212/212 [==============================] - 62s 294ms/step - loss: 0.0540 - ssim_loss: 0.0512 - mae: 0.0567 - val_loss: 0.0559 - val_ssim_loss: 0.0503 - val_mae: 0.0614
+Epoch 17/60
+212/212 [==============================] - 59s 280ms/step - loss: 0.0541 - ssim_loss: 0.0509 - mae: 0.0572 - val_loss: 0.0730 - val_ssim_loss: 0.0613 - val_mae: 0.0844
+Epoch 18/60
+212/212 [==============================] - 60s 281ms/step - loss: 0.0522 - ssim_loss: 0.0496 - mae: 0.0549 - val_loss: 0.0584 - val_ssim_loss: 0.0520 - val_mae: 0.0646
+Epoch 19/60
+212/212 [==============================] - 59s 279ms/step - loss: 0.0525 - ssim_loss: 0.0494 - mae: 0.0557 - val_loss: 0.0742 - val_ssim_loss: 0.0682 - val_mae: 0.0801
+Epoch 20/60
+212/212 [==============================] - 59s 279ms/step - loss: 0.0535 - ssim_loss: 0.0505 - mae: 0.0565 - val_loss: 0.0609 - val_ssim_loss: 0.0512 - val_mae: 0.0707
+Epoch 21/60
+212/212 [==============================] - 59s 277ms/step - loss: 0.0517 - ssim_loss: 0.0486 - mae: 0.0549 - val_loss: 0.0592 - val_ssim_loss: 0.0509 - val_mae: 0.0674
+Epoch 22/60
+212/212 [==============================] - 59s 278ms/step - loss: 0.0524 - ssim_loss: 0.0489 - mae: 0.0559 - val_loss: 0.0618 - val_ssim_loss: 0.0550 - val_mae: 0.0685
+Epoch 23/60
+212/212 [==============================] - 59s 278ms/step - loss: 0.0514 - ssim_loss: 0.0483 - mae: 0.0545 - val_loss: 0.0712 - val_ssim_loss: 0.0570 - val_mae: 0.0853
+Epoch 24/60
+212/212 [==============================] - 60s 283ms/step - loss: 0.0509 - ssim_loss: 0.0476 - mae: 0.0543 - val_loss: 0.0615 - val_ssim_loss: 0.0560 - val_mae: 0.0666
+Epoch 25/60
+212/212 [==============================] - 61s 289ms/step - loss: 0.0503 - ssim_loss: 0.0467 - mae: 0.0539 - val_loss: 0.0749 - val_ssim_loss: 0.0587 - val_mae: 0.0908
+Epoch 26/60
+212/212 [==============================] - 59s 277ms/step - loss: 0.0496 - ssim_loss: 0.0456 - mae: 0.0535 - val_loss: 0.0614 - val_ssim_loss: 0.0527 - val_mae: 0.0700
+Epoch 27/60
+212/212 [==============================] - 58s 273ms/step - loss: 0.0484 - ssim_loss: 0.0448 - mae: 0.0520 - val_loss: 0.0618 - val_ssim_loss: 0.0494 - val_mae: 0.0741
+Epoch 28/60
+212/212 [==============================] - 60s 284ms/step - loss: 0.0497 - ssim_loss: 0.0457 - mae: 0.0537 - val_loss: 0.0612 - val_ssim_loss: 0.0517 - val_mae: 0.0705
+Epoch 29/60
+212/212 [==============================] - 61s 288ms/step - loss: 0.0491 - ssim_loss: 0.0449 - mae: 0.0533 - val_loss: 0.0612 - val_ssim_loss: 0.0467 - val_mae: 0.0759
+Epoch 30/60
+212/212 [==============================] - 63s 298ms/step - loss: 0.0481 - ssim_loss: 0.0442 - mae: 0.0520 - val_loss: 0.0586 - val_ssim_loss: 0.0491 - val_mae: 0.0680
+Epoch 31/60
+212/212 [==============================] - 64s 303ms/step - loss: 0.0486 - ssim_loss: 0.0441 - mae: 0.0530 - val_loss: 0.0508 - val_ssim_loss: 0.0443 - val_mae: 0.0572
+Epoch 32/60
+212/212 [==============================] - 59s 278ms/step - loss: 0.0480 - ssim_loss: 0.0433 - mae: 0.0528 - val_loss: 0.0541 - val_ssim_loss: 0.0465 - val_mae: 0.0617
+Epoch 33/60
+212/212 [==============================] - 58s 275ms/step - loss: 0.0479 - ssim_loss: 0.0430 - mae: 0.0527 - val_loss: 0.0639 - val_ssim_loss: 0.0513 - val_mae: 0.0760
+Epoch 34/60
+212/212 [==============================] - 59s 278ms/step - loss: 0.0469 - ssim_loss: 0.0423 - mae: 0.0514 - val_loss: 0.0527 - val_ssim_loss: 0.0451 - val_mae: 0.0604
+Epoch 35/60
+212/212 [==============================] - 60s 284ms/step - loss: 0.0468 - ssim_loss: 0.0421 - mae: 0.0515 - val_loss: 0.0500 - val_ssim_loss: 0.0447 - val_mae: 0.0554
+Epoch 36/60
+212/212 [==============================] - 62s 291ms/step - loss: 0.0464 - ssim_loss: 0.0416 - mae: 0.0511 - val_loss: 0.0743 - val_ssim_loss: 0.0512 - val_mae: 0.0974
+Epoch 37/60
+212/212 [==============================] - 63s 297ms/step - loss: 0.0466 - ssim_loss: 0.0417 - mae: 0.0516 - val_loss: 0.0492 - val_ssim_loss: 0.0413 - val_mae: 0.0569
+Epoch 38/60
+212/212 [==============================] - 63s 298ms/step - loss: 0.0465 - ssim_loss: 0.0418 - mae: 0.0512 - val_loss: 0.0553 - val_ssim_loss: 0.0501 - val_mae: 0.0608
+Epoch 39/60
+212/212 [==============================] - 63s 298ms/step - loss: 0.0459 - ssim_loss: 0.0411 - mae: 0.0507 - val_loss: 0.0499 - val_ssim_loss: 0.0414 - val_mae: 0.0587
+Epoch 40/60
+212/212 [==============================] - 63s 299ms/step - loss: 0.0461 - ssim_loss: 0.0413 - mae: 0.0509 - val_loss: 0.0517 - val_ssim_loss: 0.0431 - val_mae: 0.0602
+Epoch 41/60
+212/212 [==============================] - 64s 301ms/step - loss: 0.0454 - ssim_loss: 0.0407 - mae: 0.0502 - val_loss: 0.0545 - val_ssim_loss: 0.0475 - val_mae: 0.0615
+Epoch 42/60
+212/212 [==============================] - 64s 300ms/step - loss: 0.0454 - ssim_loss: 0.0402 - mae: 0.0506 - val_loss: 0.0576 - val_ssim_loss: 0.0514 - val_mae: 0.0640
+Epoch 43/60
+212/212 [==============================] - 64s 303ms/step - loss: 0.0473 - ssim_loss: 0.0421 - mae: 0.0525 - val_loss: 0.0510 - val_ssim_loss: 0.0450 - val_mae: 0.0571
+Epoch 44/60
+212/212 [==============================] - 64s 303ms/step - loss: 0.0453 - ssim_loss: 0.0402 - mae: 0.0504 - val_loss: 0.0572 - val_ssim_loss: 0.0469 - val_mae: 0.0675
+Epoch 45/60
+212/212 [==============================] - 64s 302ms/step - loss: 0.0441 - ssim_loss: 0.0394 - mae: 0.0488 - val_loss: 0.0610 - val_ssim_loss: 0.0460 - val_mae: 0.0759
+Epoch 46/60
+212/212 [==============================] - 64s 302ms/step - loss: 0.0456 - ssim_loss: 0.0400 - mae: 0.0512 - val_loss: 0.0486 - val_ssim_loss: 0.0438 - val_mae: 0.0536
+Epoch 47/60
+212/212 [==============================] - 64s 303ms/step - loss: 0.0459 - ssim_loss: 0.0406 - mae: 0.0513 - val_loss: 0.0508 - val_ssim_loss: 0.0427 - val_mae: 0.0590
+Epoch 48/60
+212/212 [==============================] - 66s 312ms/step - loss: 0.0441 - ssim_loss: 0.0392 - mae: 0.0489 - val_loss: 0.0562 - val_ssim_loss: 0.0536 - val_mae: 0.0588
+Epoch 49/60
+212/212 [==============================] - 66s 311ms/step - loss: 0.0446 - ssim_loss: 0.0395 - mae: 0.0498 - val_loss: 0.0676 - val_ssim_loss: 0.0563 - val_mae: 0.0787
+Epoch 50/60
+212/212 [==============================] - 63s 295ms/step - loss: 0.0448 - ssim_loss: 0.0395 - mae: 0.0502 - val_loss: 0.0532 - val_ssim_loss: 0.0427 - val_mae: 0.0638
+Epoch 51/60
+212/212 [==============================] - 62s 292ms/step - loss: 0.0446 - ssim_loss: 0.0392 - mae: 0.0499 - val_loss: 0.0598 - val_ssim_loss: 0.0600 - val_mae: 0.0593
+Epoch 52/60
+212/212 [==============================] - 64s 303ms/step - loss: 0.0448 - ssim_loss: 0.0392 - mae: 0.0505 - val_loss: 0.0638 - val_ssim_loss: 0.0525 - val_mae: 0.0751
+Epoch 53/60
+212/212 [==============================] - 65s 306ms/step - loss: 0.0434 - ssim_loss: 0.0380 - mae: 0.0488 - val_loss: 0.0552 - val_ssim_loss: 0.0526 - val_mae: 0.0581
+Epoch 54/60
+212/212 [==============================] - 63s 296ms/step - loss: 0.0446 - ssim_loss: 0.0391 - mae: 0.0500 - val_loss: 0.0797 - val_ssim_loss: 0.0844 - val_mae: 0.0746
+Epoch 55/60
+212/212 [==============================] - 67s 317ms/step - loss: 0.0433 - ssim_loss: 0.0384 - mae: 0.0483 - val_loss: 0.0507 - val_ssim_loss: 0.0476 - val_mae: 0.0537
+Epoch 56/60
+212/212 [==============================] - 63s 295ms/step - loss: 0.0423 - ssim_loss: 0.0382 - mae: 0.0465 - val_loss: 0.0566 - val_ssim_loss: 0.0483 - val_mae: 0.0651
+Epoch 57/60
+212/212 [==============================] - 57s 270ms/step - loss: 0.0418 - ssim_loss: 0.0381 - mae: 0.0455 - val_loss: 0.0563 - val_ssim_loss: 0.0452 - val_mae: 0.0677
+Epoch 58/60
+212/212 [==============================] - 57s 271ms/step - loss: 0.0394 - ssim_loss: 0.0364 - mae: 0.0424 - val_loss: 0.0445 - val_ssim_loss: 0.0436 - val_mae: 0.0451
+Epoch 59/60
+212/212 [==============================] - 57s 269ms/step - loss: 0.0401 - ssim_loss: 0.0370 - mae: 0.0432 - val_loss: 0.0528 - val_ssim_loss: 0.0426 - val_mae: 0.0630
+Epoch 60/60
+212/212 [==============================] - 57s 270ms/step - loss: 0.0392 - ssim_loss: 0.0358 - mae: 0.0425 - val_loss: 0.0501 - val_ssim_loss: 0.0398 - val_mae: 0.0604
