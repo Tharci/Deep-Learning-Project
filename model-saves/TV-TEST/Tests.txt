@@ -1,0 +1,41 @@
+SSIM_LOSS: reference
+
+
+TV1:
+  def tv_loss(y_true, y_pred):
+    tv = tf.reduce_mean(tf.image.total_variation(decenter_img(y_pred)))
+    return ssim_loss(y_true, y_pred) + total_variation_weight * tv
+
+- tv_loss_1_A: total_variation_weight = 1e-4
+- tv_loss_1_B: total_variation_weight = 1e-6
+- tv_loss_1_C: total_variation_weight = 1e-10
+- tv_loss_1_D: total_variation_weight = 1e-13
+
+=> using 1e-10 as weight
+
+TV2:
+  total_variation_weight = 1e-10
+  reduce_mean -> reduce_sum
+
+=> reduce_sum results in smaller loss (at least for the first time xd)
+
+
+TV3:
+  total_variation_weight = 1e-10
+  def tv_loss(y_true, y_pred):
+    tv = tf.reduce_sum(tf.image.total_variation(tf.abs(decenter_img(y_pred) - decenter_img(y_true))))
+    return ssim_loss(y_true, y_pred) + total_variation_weight * tv
+no high hopes on this one, just to see how it performs
+
+=> similar result, a bit better colors, but bit worse results
+  
+
+TV4:
+  total_variation_weight = 1e-10
+  def tv_loss(y_true, y_pred):
+    tv = tf.nn.relu(tf.reduce_sum(tf.image.total_variation(decenter_img(y_pred))) - tf.reduce_sum(tf.image.total_variation(decenter_img(y_true))))
+    return ssim_loss(y_true, y_pred) + total_variation_weight * tv
+
+=> good results compared to reference, and better colors than TV2
+
+===> TV4 is the best total variation in my opinion
