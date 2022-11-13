@@ -97,5 +97,5 @@ def is_timestamp_in_range(timestamp, time_ranges):
             return True
     return False
 
-
-prepare_videos()
+if __name__ == '__main__':
+    prepare_videos()
