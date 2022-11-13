@@ -15,9 +15,9 @@ import os
 # Warning:
 # - mp4 is the only supported extension at the moment
 
-FRAMES_DISTANCE = 10000
+FRAMES_DISTANCE = 5000
 VIDEOS_PATH = "videos"
-FRAMES_OUTPUT = "frames"
+FRAMES_OUTPUT = "images/HollowKnight-1080p"
 
 
 def prepare_videos():
@@ -27,7 +27,7 @@ def prepare_videos():
         pass
 
     videos = os.listdir(VIDEOS_PATH)
-    videos = filter(lambda name: name.endswith("mp4"), videos)
+    videos = filter(lambda name: name.endswith("webm"), videos)
     videos = list(map(lambda name: "%s/%s" % (VIDEOS_PATH, name), videos))
 
     print("Found videos %s" % videos)
