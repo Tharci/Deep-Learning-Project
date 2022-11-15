@@ -10,3 +10,4 @@ videos/**
 
 playground/__pycache__/
 playground/logs/
+playground/output/

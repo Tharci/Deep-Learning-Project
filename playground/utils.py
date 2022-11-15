@@ -1,11 +1,7 @@
 import tensorflow
 from keras import Model
 from keras.layers import Conv2D, BatchNormalization, Activation, Conv2DTranspose, Input
-from preprocess import decenter_img
-
-
-#def ssim_loss(y_true, y_pred):
-#    return 1 - tensorflow.reduce_mean(tensorflow.image.ssim_multiscale(y_true, y_pred, 1.0, filter_size=3))
+import numpy as np
 
 
 def my_conv(x, filters, kernel_size=3, strides=(2, 2), padding='same', kernel_initializer='he_normal', name=None):
@@ -23,12 +19,17 @@ def my_convTrans(x, filters, kernel_size=3, strides=(2, 2), padding='same', kern
 
 
 def split_autoencoder(autoencoder):
-    # Get encoder
     encoder = Model(inputs=autoencoder.layers[0].input, outputs=autoencoder.get_layer('encoded').output)
-    decoder_input = Input(shape=(12, 12, 32))
-    decoder = Model(inputs=autoencoder.get_layer('decoder_input').input, outputs=autoencoder.layers[-1].output)
-
+    decoder = Model(inputs=autoencoder.get_layer('encoded').output, outputs=autoencoder.layers[-1].output)
     return encoder, decoder
+
+
+def save_encoded(encoded_slices, encoded_path):  # This should save the encoded image, not a final version
+    np.save(encoded_path, encoded_slices)
+
+
+def load_encoded(encoded_path):  # This should load the encoded image
+    pass
 
 
 def create_learning_scheduler(steps_per_epoch, initial_learning=0.01, decay_rate=0.8):
