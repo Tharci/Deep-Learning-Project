@@ -24,12 +24,13 @@ def split_autoencoder(autoencoder):
     return encoder, decoder
 
 
-def save_encoded(encoded_slices, encoded_path):  # This should save the encoded image, not a final version
-    np.save(encoded_path, encoded_slices)
+def save_encoded(image_size, encoded_slices, encoded_path):  # This should save the encoded image, not a final version
+    np.savez_compressed(encoded_path, size=image_size, slices=encoded_slices)
 
 
 def load_encoded(encoded_path):  # This should load the encoded image
-    pass
+    result = np.load(encoded_path)
+    return result['size'], result['slices']
 
 
 def create_learning_scheduler(steps_per_epoch, initial_learning=0.01, decay_rate=0.8):
