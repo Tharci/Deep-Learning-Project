@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-f = open("model-saves/final-1080p-850epoch/log.csv", "r")
+f = open("model-saves/final-general-800epoch/log.csv", "r")
 lines = f.readlines()
 
 epochs = np.zeros(len(lines)-1, dtype=int)
@@ -16,11 +16,12 @@ for i in range(1, len(lines)):
 
 f.close()
 
-plt.title("1080p 850e")
+plt.title("Training on COCO")
 plt.plot(epochs, valid_loss, color='r', label="Validation loss")
 plt.plot(epochs, train_loss, color="b", label="Training loss")
 plt.xlabel("Number of epochs")
 plt.ylabel("Loss")
+plt.ylim(0, 0.3)
 plt.legend(loc="upper right")
 plt.show()
 
