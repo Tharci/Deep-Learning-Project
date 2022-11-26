@@ -14,3 +14,4 @@ playground/output/
 
 /logs/
 /output/
+/__pycache__/
